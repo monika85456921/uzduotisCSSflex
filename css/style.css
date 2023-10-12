@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+/* header and Nav*/
+header {
+  background-color: rgb(238, 240, 241);
+  border: 1px solid rgb(238, 240, 241);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(177, 174, 174);
+}
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+/* background*/
+h2 {
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  height: 300px;
+}
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  z-index: -2;
+}
+.background::before {
+  content: "";
+  background-image: url("../img/medis2.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  opacity: 0.5;
+  height: 600px;
+  width: 100%;
+  margin: 0;
+  z-index: -5;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+/* articles*/
+section {
+  margin: 0 auto;
+}
+.section-1 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+img {
+  height: 250px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+.text-article {
+  display: flex;
+  text-align: left;
+  padding-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+p {
+  display: inline-block;
+  width: 60%;
+}
