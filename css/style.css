@@ -3,49 +3,67 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   height: 100vh;
   position: relative;
 }
-/* header and Nav*/
-header {
-  background-color: rgb(238, 240, 241);
-  border: 1px solid rgb(238, 240, 241);
+@media (max-width:768px){
+  body{
+    overflow-x: hidden;
+  }
+  /* header and Nav*/
+.fa-house{
+  font-size: 3rem;
+}
+.logo{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  height: 50px;
+}
+header {
+  background-color: #ffff;
+  border: 1px solid #ffff;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   width: 100%;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+  font-family: 'Montserrat', sans-serif;
 }
-
+nav{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+}
 li a {
   text-decoration: none;
   color: rgb(177, 174, 174);
 }
 header li {
   list-style: none;
-  display: inline-block;
   padding: 0 20px;
+  display: inline;
+}
+h1{
+  font-family: 'Montserrat', sans-serif;
 }
 /* background*/
 h2 {
   font-size: 3rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(255, 255, 255);
-  background-color: rgb(255, 255, 255);
+  border: 1px solid #ffff;
+  background-color: #ffff;
   width: 60%;
-  height: 300px;
+  height: 50%;
 }
 .background {
   display: flex;
@@ -72,7 +90,7 @@ h2 {
   right: 0;
   left: 0;
 }
-/* articles*/
+/* articles about gydomieji augalai*/
 section {
   margin: 0 auto;
 }
@@ -85,7 +103,8 @@ section {
 h3 {
   font-size: 2.5rem;
   text-align: center;
-  margin: 20px 0 20px 0;
+  margin: 50px 0 50px 0;
+  font-family: 'Montserrat', sans-serif;
 }
 img {
   height: 250px;
@@ -113,4 +132,287 @@ img {
 p {
   display: inline-block;
   width: 60%;
+  font-family: 'Montserrat', sans-serif;
+}
+/* articles about nykstantys augalai */
+
+.section-2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 30px;
+}
+.top-section{
+  display: flex;
+  flex-direction:column;
+  max-width: 100%;
+  max-height: 50%;
+  gap: 10px;
+}
+.bottom-section{
+  display: flex;
+  flex-direction:column;
+  margin-top: 10px;
+  max-width: 100%;
+  max-height: 50%;
+  gap:10px;
+}
+h4{
+    font-weight: bold;
+    padding: 5px 0 5px 0;
+}
+.article-text-2{
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  justify-content:center ;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.section-pic{
+  height: 250px;
+  width: 250px;
+}
+/* section misku nauda */
+.section-3-picture{
+  background-image: url("../img/medis2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 300px;
+  width: 100%;
+}
+.text-boxs{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  flex-wrap: wrap;
+}
+.big-text{
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.section-3-text{
+  display:flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  margin: 0 50px;
+  flex-wrap: wrap;
+  align-content: center;
+}
+/* footer */
+.footer-box{
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(177, 174, 174); ;
+  font-size: 1rem;
+}
+}
+/* header and Nav*/
+@media (min-width:769px){
+.fa-house{
+  font-size: 3rem;
+}
+header {
+  background-color: #ffff;
+  border: 1px solid #ffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-family: 'Montserrat', sans-serif;
+}
+li a {
+  text-decoration: none;
+  color: rgb(177, 174, 174);
+}
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+h1{
+  font-family: 'Montserrat', sans-serif;
+}
+/* background*/
+h2 {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffff;
+  background-color: #ffff;
+  width: 60%;
+  height: 50%;
+}
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  z-index: -2;
+}
+.background::before {
+  content: "";
+  background-image: url("../img/medis2.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  opacity: 0.5;
+  height: 600px;
+  width: 100%;
+  margin: 0;
+  z-index: -5;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+/* articles about gydomieji augalai*/
+section {
+  margin: 0 auto;
+}
+.section-1 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 50px 0 50px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+img {
+  height: 250px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+.text-article {
+  display: flex;
+  text-align: left;
+  padding-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+p {
+  display: inline-block;
+  width: 60%;
+  font-family: 'Montserrat', sans-serif;
+}
+/* articles about nykstantys augalai */
+
+.section-2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 30px;
+}
+.top-section{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  max-height: 50%;
+  gap: 10px;
+}
+.bottom-section{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  max-width: 100%;
+  max-height: 50%;
+  gap:10px;
+}
+h4{
+    font-weight: bold;
+    padding: 5px 0 5px 0;
+}
+.article-text-2{
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  justify-content:center ;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.section-pic{
+  height: 150px;
+  width: 150px;
+}
+/* section misku nauda */
+.section-3-picture{
+  background-image: url("../img/medis2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 300px;
+  width: 100%;
+}
+.text-boxs{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  flex-wrap: wrap;
+}
+.big-text{
+  text-align: center;
+  width: 50%;
+  margin-top: 20px;
+}
+.section-3-text{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin: 0 50px;
+}
+/* footer */
+.footer-box{
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(177, 174, 174); ;
+  font-size: 1rem;
+}
 }
